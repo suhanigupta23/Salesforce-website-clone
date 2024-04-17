@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
+    @media (min-width: 768px) and (max-width: 1023px){
     .grid.grid_main {
         column-gap: 24px;
         grid-template-columns: repeat(12, 1fr);
         margin-left: 32px;
         margin-right: 32px;
         row-gap: 24px;
-    }
+    }}
     .bg_image2{
         float:right;
 
@@ -27,6 +28,26 @@
     {
         font-size:32px;
     }
+    .text{
+        font-family:  "Salesforce Sans", system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    }
+    .garden_image
+    {
+        height: 508px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    }
+    .garden__background {
+    width: 100%;
+    z-index: -1;
+}
+    @media (max-width: 1023px){
+    .garden_image
+    {
+        display: none;
+        
+    }}
     </style>
 </head>
 <body>
@@ -60,10 +81,11 @@
 
 </div>
 <div class="grid.grid_main">
-<img align="right" src="https://wp.salesforce.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-sm-bg.jpg?resize=1462,2048" height="400" width="600">
-<h1 style ="text-align:left;margin-bottom:0;color:#032d60;;">Try Salesforce Starter Suite for free.</h1></div><!-- #031610 -->
+<img class="garden_image garden__background" src="https://wp.salesforce.com/en-ap/wp-content/uploads…02/php-marquee-starter-sm-bg.jpg?resize=1462,2048" height="100%" width="100%">
+
+<h1 style ="text-align:left;margin-bottom:0;color:#032d60;" class="text">Try Salesforce Starter Suite for free.</h1></div><!-- #031610 -->
    <br>
-    <br>
+    <br><br><br><br><br>
     <!--div 3-->
 <div class="third">
     <header>
