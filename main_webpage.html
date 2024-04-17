@@ -31,29 +31,42 @@
     .text{
         font-family:  "Salesforce Sans", system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     }
-    .garden_image
+    .garden_image_dekstop
     {
         height: 508px;
     left: 0;
     position: absolute;
     top: 0;
     }
-    .garden__background {
+    .garden__background_dekstop {
     width: 100%;
     z-index: -1;
 }
     @media (max-width: 1023px){
-    .garden_image
+    .garden_image_desktop
     {
         display: none;
         
     }}
+    .garden-mobile {
+    bottom: 0;
+    height: 1076px;
+    left: 0;
+    position: absolute;
+}
+.blade__background {
+    width: 100%;
+    z-index: -1;
+}
+    .search_image{
+        position: relative;
+    top: 3px;
+    max-width: 18px;
+    }
     </style>
 </head>
 <body>
     <!-- div1 --> 
-   <!--div first-->
-     <!-- div1 --> 
    <!--div first-->
     <header>
     <div class="first" style="display: flex;" >
@@ -72,6 +85,9 @@
         <a href="https://www.salesforce.com/in/form/signup/freetrial-sales/?d=topnav2-btn-ft" style="color:white">Try For Free</a>
         </button>
         </div>
+        <div>
+            <img class="search_image" src="https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-light-blue">
+        </div>
     </div>
     </header>
     <!-- div2 -->
@@ -80,9 +96,10 @@
         <a href="https://www.salesforce.com/in/form/pdf/gartner-cdp-magic-quadrant/?d=eb1-txt-gartner" style="color:rgb(255,255,255)"><u>Read the report</u></a></h3></center>
 
 </div>
-<div class="grid.grid_main">
-<img class="garden_image garden__background" src="https://wp.salesforce.com/en-ap/wp-content/uploads…02/php-marquee-starter-sm-bg.jpg?resize=1462,2048" height="100%" width="100%">
 
+<div class="grid.grid_main">
+<img class="garden_image_desktop garden__background_dekstop" loading="lazy" src="https://wp.salesforce.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-lg-bg.jpg?resize=2048,640" height="100%" width="100%">
+<img class="garden-mobile blade__background" src="https://wp.salesforce.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-sm-bg.jpg?resize=1462,2048" height="100%" width="100%">
 <h1 style ="text-align:left;margin-bottom:0;color:#032d60;" class="text">Try Salesforce Starter Suite for free.</h1></div><!-- #031610 -->
    <br>
     <br><br><br><br><br>
